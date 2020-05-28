@@ -1,0 +1,27 @@
+{
+    "name": "grupomedia/php-exercises",
+    "description": "Interesting tasks to test your knowledge in the PHP language",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grupo Media",
+            "email": "office@rio.bg"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
