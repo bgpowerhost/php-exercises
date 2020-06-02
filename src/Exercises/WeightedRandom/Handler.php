@@ -8,5 +8,13 @@ namespace GrupoMedia\Exercises\WeightedRandom;
  */
 final class Handler
 {
-    //
+	public function handle($input) {
+		$rand = mt_rand(1, (int)array_sum($input));
+		foreach ($input as $key => $value) {
+			$rand -= $value;
+			if($rand <= 0) {
+				return $key;
+			}
+		}
+	}
 }
